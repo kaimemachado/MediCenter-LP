@@ -1,6 +1,6 @@
+
 * {
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -60,7 +60,7 @@ nav a:hover {
 #banner {
     display: flex;
     justify-content: center;
-    background-image: url("/assets/img/img1.jpg");
+    background-image: url("../img/img1.jpg");
     background-size: cover;
     background-position: center;
     height: 670px;
@@ -298,3 +298,257 @@ article .news_summary {
     font-size: 14px;
     line-height: 20px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    background-color: #1E1E1E;
+}
+
+.footer_menu {
+    display: flex;
+}
+
+.fm_1,
+.fm_2,
+.fm_3 {
+    flex:1;
+    padding: 20px;
+}
+
+.fm_1 {
+    background-color: #39AAE1;
+}
+
+.fm_2 {
+    background-color: #0079C7;
+}
+
+.fm_3 {
+    background-color: #2B4C99;
+}
+
+.footer_area {
+    display: flex;
+}
+
+.footer_areaitem {
+    flex: 1
+}
+
+.flexColumn {
+    flex-direction: column;
+}
+
+.footer_area .widgets_tittle_text {
+    color: #FFFF;
+}
+
+.footer_body_text {
+    color: #909090;
+    font-size: 13px;
+    margin: 20px 0 20px 0;
+}
+
+.footer_body_address, .footer_body_contact {
+    color: #909090;
+    font-size: 13px;
+    line-height: 19px;
+}
+
+.footer_body_contact, .footer_body_contact {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.footer_body_contact {
+    margin-left: 50px;
+}
+
+.footer_body_contact a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer_body_icons {
+    display: flex;
+    flex-direction: row;
+}
+
+.facebook,
+.twitter,
+.calendar,
+.email {
+    max-width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.footer_copy {
+    border-top: 1px solid #2C2C2C;
+    height: 40px;
+    line-height: 40px;
+    color: #5C5C5C;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+.news_1,
+.news_2,
+.news_3 {
+    font-size: 13px;
+    color: #DCDCDC;
+    margin-top: 15px;
+    margin-right: 30px;
+}
+
+.news_1 img,
+.news_2 img,
+.news_3 img {
+    padding-right: 2px;
+}
+
+.news_1 a,
+.news_2 a,
+.news_3 a {
+    text-decoration: none;
+    color: #DCDCDC
+}
+
+.news_1 p,
+.news_2 p,
+.news_3 p {
+    font-size: 13px;
+    color: #39AAE1;
+}
+
+.tweets_1,
+.tweets_2,
+.tweets_3 {
+    font-size: 13px;
+    color: #727272;
+    margin-top: 15px;
+    line-height: 18px;
+
+}
+
+.tweets_1 img,
+.tweets_2 img,
+.tweets_3 img {
+    padding-right: 2px;
+}
+
+.tweets_1 a,
+.tweets_2 a,
+.tweets_3 a {
+    text-decoration: none;
+    color: #DCDCDC;
+}
+
+
+.tweets_1 p,
+.tweets_2 p,
+.tweets_3 p {
+    font-size: 13px;
+    color: #39AAE1;
+    line-height: 20px;
+}
+
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.mm_line {
+    height: 3px;
+    background-color: #39AAE1;
+}
+
+
+@media (max-width:600px) {
+    .banner_headline {
+        padding: 20px;
+        margin-top: 200px;
+    }
+
+    .banner_headline h1 {
+        font-size: 55px;    
+    }
+
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+
+    .banner_options {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .widgets {
+        margin-top: 200px;
+        padding-left: 20px;
+    }
+
+    article .ultimo {
+        margin-bottom: -150px;
+
+    }
+
+    #geral aside {
+        padding-right: 20px;
+        
+    }
+
+    .footer_menu {
+        flex-direction: column;
+    }
+
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .footer_copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        padding: 0px;
+        background-color: #FFF;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .logo {
+        padding-left: 20px;
+    }
+
+    .menu-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
